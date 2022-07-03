@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+set -e
+
+# Setup cxFlow jar for scan execution -- Start
+# Downlaod jar
+# Setup cxFlow jar for scan execution -- End

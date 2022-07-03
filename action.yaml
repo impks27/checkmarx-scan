@@ -1,0 +1,19 @@
+name: "Checkmarx Scan"
+description: "Checkmarx (SAST) Scan for application code"
+author: "impks27"
+inputs:
+  USER_NAME:  
+    description: 'Username to login with'
+    required: false
+  PASSWORD:
+    description: 'Password of the Username used for login'
+    required: false
+  FILE:
+    description: 'Artifact location'
+    required: false
+  REGISTRY:
+    description: 'Desired Artifactory URL'
+    required: false
+runs:
+  using: "docker"
+  image: "Dockerfile"
