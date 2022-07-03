@@ -2,7 +2,7 @@
 set -e
 
 # Setup cxFlow jar for scan execution -- Start
-# Downlaod jar
+# Downlaod jar - Check how to place the jar
 # Setup cxFlow jar for scan execution -- End
 
 # Invoke Checkmarx preflight -- Start
@@ -19,6 +19,7 @@ set -e
 
 # Invoke Checkmarx scan execution -- Start
 # Execute cxFlow CMD
+java -jar  /apps/checkmarx/cx-flow-1.6.28.jar --scan --cx-project=$PROJECT --cx-team=$TEAM --base-url=$CHECKMARX_BASE_URL --preset=$CHECKMARX_SCAN_PRESET --namespace=$NAMESPACE --repo-name=$REPO_NAME --repo-url=$REPO_URL --bug-tracker=$CX_FLOW_BUG_TRACKER --branch=$BRANCH --checkmarx.incremental=$CHECKMARX_INCREMENTAL --f="." --checkmarx.version="9.0" #--sprint.config.location=./application.yml 
 # Process Scan Xml Response
 # Clean Up Scan configs
 # Add Traceability Comment to Scan Record
