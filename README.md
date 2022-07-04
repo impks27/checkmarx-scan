@@ -11,7 +11,7 @@
     - name: Checkmarx CxFlow Action
       uses: impks27/checkmarx-scan-action@master
       with:
-        project: GithubActionTest
+        project: demo-github-action
         team: /CxServer/SP/Checkmarx
         checkmarx_url: ${{ secrets.CHECKMARX_URL }}
         checkmarx_username: ${{ secrets.CHECKMARX_USERNAME }}
